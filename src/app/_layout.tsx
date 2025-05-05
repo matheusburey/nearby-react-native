@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-// import "@/assets/global.css";
+import "@/assets/global.css";
 
 import { Stack } from "expo-router";
 
