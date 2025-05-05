@@ -2,6 +2,7 @@
   "name": "nearby-react-native",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -43,5 +44,9 @@
     "react-test-renderer": "19.0.0",
     "typescript": "~5.8.3"
   },
-  "private": true
+  "overrides": {
+    "lucide-react-native": {
+      "react": "^19"
+    }
+  }
 }
