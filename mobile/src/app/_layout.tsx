@@ -38,9 +38,7 @@ export default function RootLayout() {
 					headerShown: false,
 					contentStyle: { backgroundColor: "#FCFDFE" },
 				}}
-			>
-				<Stack.Screen name="index" />
-			</Stack>
+			/>
 			<StatusBar style="auto" />
 		</>
 	);
