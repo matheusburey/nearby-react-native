@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import "@/assets/global.css";
 
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import {
@@ -32,7 +33,7 @@ export default function RootLayout() {
 		return null;
 	}
 	return (
-		<>
+		<GestureHandlerRootView className="flex-1">
 			<Stack
 				screenOptions={{
 					headerShown: false,
@@ -40,6 +41,6 @@ export default function RootLayout() {
 				}}
 			/>
 			<StatusBar style="auto" />
-		</>
+		</GestureHandlerRootView>
 	);
 }
