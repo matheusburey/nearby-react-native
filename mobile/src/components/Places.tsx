@@ -10,6 +10,7 @@ import {
 	StyleSheet,
 } from "react-native";
 import BottomSheet, { BottomSheetFlatList } from "@gorhom/bottom-sheet";
+import { router } from "expo-router";
 
 function Place({
 	place,
@@ -29,7 +30,7 @@ function Place({
 			/>
 			<View className="flex-1 gap-1">
 				<Text className="text-sm font-regular text-gray-600">{place.name}</Text>
-				<Text className="text-xs font-medium text-gray-500">
+				<Text numberOfLines={2} className="text-xs font-medium text-gray-500">
 					{place.description}
 				</Text>
 				<View className="flex-row mt-2 gap-2">
@@ -68,9 +69,7 @@ export default function Places({ places }: IPlacesProps) {
 				renderItem={({ item }) => (
 					<Place
 						place={item}
-						onPress={() => {
-							console.log(item);
-						}}
+						onPress={() => router.push(`/market/${item.id}` as never)}
 					/>
 				)}
 				showsHorizontalScrollIndicator={false}

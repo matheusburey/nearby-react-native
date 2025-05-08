@@ -63,7 +63,7 @@ export default function Categories({
 }: ICategoriesProps) {
 	return (
 		<FlatList
-			className="max-h-9 absolute top-16"
+			className="max-h-9 absolute top-16 z-10"
 			horizontal
 			showsHorizontalScrollIndicator={false}
 			data={categories}
